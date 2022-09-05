@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+    </head>
+    <body>
+    <form action="resultados.html" method="get"> 
+    <!--"post" es para ejecutar en servidores y "get" para que el navegador lo ejecute--> 
+        <div>
+        <label for="nombredeusuario">Nombre de Usuario</label>
+        <input type="text" name="nombredeusuario" id="nombredeusuario" required />
+    </div>
+    <br> <!--"El elemento Line Break produce un salto de linea en el texto-->
+    <div> <!--"La etiqueta div define las divisiones logicas existentes-->
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password" required />
+    </div>
+    <br>
+    <div>
+        <label for="edad">Cual es tu edad</label>
+        <input type="number" name="edad" id="edad" min="0" max="100" required />
+    </div>
+    <br>
+    <div>
+        <br>
+    <div>
+        <label for="nacimiento">Cual es tu fecha de nacimiento</label>
+        <input type="date" name="nacimiento" id="nacimiento" />
+    </div>
+    <br>
+    <div>
+        <label for="comentarios">Comentarios</label>
+        <textarea name="comentarios" id="comentarios"></textarea>
+    </div>
+    <br>
+    <button type="reset">Reset</button>
+    <button type="submit">Enviar</button>
+    </form>
+    </body>
+</html>
